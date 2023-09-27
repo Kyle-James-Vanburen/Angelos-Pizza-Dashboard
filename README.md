@@ -3,7 +3,9 @@
 
  MYSQL query scripts are included to give a better understanding for my numbers and the data I wanted to pull specifically.
 
- I did have to use the import wizard in mysql to import data from Excel csv files to make my tables in mysql.
+ I did have to use the import wizard in mysql to import data from Excel csv files to make my tables in mysql. 
+ 
+ EXCEL csv file link: https://drive.google.com/drive/folders/1wXkVaWjAplONy5PT8Nxc25CdNh6pyFnX?usp=sharing
 
  # Query Script Breakdown
  1. ORDER&SALES - This SQL script is designed to retrieve specific data from the "orders" table along with related information from the "item" and "address" tables. It combines information about orders, items, and delivery addresses into one result set.
