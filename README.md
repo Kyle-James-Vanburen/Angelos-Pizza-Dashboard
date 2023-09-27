@@ -1,2 +1,3 @@
 # Angelos-Pizza-Dashboard
-Table story that contains three interactive dashboards
+# IMPORTANT: Heres a web link to the dashboard bellow if Tableau isnt installed onto your PC!! https://public.tableau.com/app/profile/kyle.vanburen/viz/AngelosPizzaAnalytics/Final?publish=yes
+ 
