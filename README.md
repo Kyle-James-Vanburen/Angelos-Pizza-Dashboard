@@ -7,7 +7,7 @@ You will need to use Excel to access the CSV files, heres a link for the free we
  
  EXCEL csv file link: https://drive.google.com/drive/folders/1wXkVaWjAplONy5PT8Nxc25CdNh6pyFnX?usp=sharing
 
-# S.T.A.R
+#S.T.A.R
 
 SITUATION - Owner of Angelo's Pizza has requested me to develop three unique dashboards to increase the business profit.
 
