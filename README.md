@@ -4,8 +4,18 @@
  MYSQL query scripts are included to give a better understanding for my numbers and the data I wanted to pull specifically.
 
  I did have to use the import wizard in mysql to import data from Excel csv files to make my tables in mysql. 
+
+You will need to use Excel to access the CSV files, heres a link for the free web version of Excel: https://www.office.com/launch/excel?ui=en-US&rs=US&auth=2
  
  EXCEL csv file link: https://drive.google.com/drive/folders/1wXkVaWjAplONy5PT8Nxc25CdNh6pyFnX?usp=sharing
+
+ S.T.A.R
+
+SITUATION - Owner of Angelo's Pizza has requested me to develop three unique dashboards to increase the business profit. One for orders & sales comparsions. A second one, for inventory quantity & cost. And the third and last dashboard for staff labor cost.
+
+TASK - One for orders & sales comparsions. A second one, for inventory quantity & cost. And the third and last dashboard for staff labor cost.
+
+
 
  # Query Script Breakdown
  1. ORDER&SALES - This SQL script is designed to retrieve specific data from the "orders" table along with related information from the "item" and "address" tables. It combines information about orders, items, and delivery addresses into one result set.
