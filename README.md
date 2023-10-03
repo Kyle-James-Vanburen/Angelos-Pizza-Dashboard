@@ -167,8 +167,29 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
           ing.ing_name,
           ing.ing_weight,
           ing.ing_price) s1;
- 
-   
+
+**4. EMPLOYEE LABOR COST**
+
+• Retrieves staff costs based on rota data, considering staff names, shift timings, hourly rates, and labor costs.
+
+• Utilizes data from "rota," "staff," and "shift" tables to calculate staff labor expenses.
+
+    SELECT
+       r.date,
+       s.first_name,
+       s.last_name,
+       s.hourly_rate,
+       sh.start_time,
+       sh.end_time,
+       ((hour(timediff(sh.end_time, sh.start_time)) * 60) + (minute(timediff(sh.end_time, sh.start_time)))) / 60 AS hours_in_shift,
+       ((hour(timediff(sh.end_time, sh.start_time)) * 60) + (minute(timediff(sh.end_time, sh.start_time)))) / 60 * s.hourly_rate AS staff_cost
+    
+    FROM rota r
+       LEFT JOIN staff s ON r.staff_id = s.staff_id
+       LEFT JOIN shift sh ON r.shift_id = sh.shift_id;
+
+**Contact:**
+
 If you have any questions or need further assistance, please feel free to contact the project maintainer at vanburen.kyle@yahoo.com.
 
 
