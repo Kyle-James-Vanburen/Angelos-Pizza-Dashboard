@@ -1,5 +1,5 @@
 # Angelos-Pizza-Dashboard
-# IMPORTANT: Theres a web link bellow for the dashboards, if Tableau isnt installed onto your PC!! https://public.tableau.com/app/profile/kyle.vanburen/viz/AngelosPizzaAnalytics/Final?publish=yes
+## IMPORTANT: Theres a web link bellow for the dashboards, if Tableau isnt installed onto your PC!! https://public.tableau.com/app/profile/kyle.vanburen/viz/AngelosPizzaAnalytics/Final?publish=yes
 
  MYSQL query scripts are included to give a better understanding for my numbers and the data I wanted to pull specifically.
 
