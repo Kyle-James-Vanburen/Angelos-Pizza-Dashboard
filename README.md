@@ -1,26 +1,57 @@
 # Angelos-Pizza-Dashboard
-## IMPORTANT: Web link bellow for the Tableau story, if Tableau isnt installed onto your PC!! https://public.tableau.com/app/profile/kyle.vanburen/viz/AngelosPizzaAnalytics/Final?publish=yes
 
- MYSQL query scripts are included to give a better understanding for my numbers and the data I wanted to pull specifically.
+**Introduction:**
 
-You will need to use Excel to access the CSV files, heres a link for the free web version of Excel: https://www.office.com/launch/excel?ui=en-US&rs=US&auth=2
- 
- EXCEL csv file link: https://drive.google.com/drive/folders/1wXkVaWjAplONy5PT8Nxc25CdNh6pyFnX?usp=sharing
+Angelos-Pizza-Dashboard is a comprehensive tool developed to analyze Angelo's Pizza sales data and optimize business operations. This dashboard provides insights into orders, sales, inventory, and staff labor costs, enabling informed decision-making for increased profitability.
 
-# S.T.A.R
+**Important Links:**
 
-SITUATION - Owner of Angelo's Pizza has requested me to develop three unique dashboards to increase the business profit.
+• Tableau Story (View Dashboard): https://public.tableau.com/app/profile/kyle.vanburen/viz/AngelosPizzaAnalytics/Final?publish=yes
 
-TASK - One for orders & sales comparsions. A second one, for inventory quantity & cost. And the third and last dashboard for staff labor cost.
+• Excel CSV Files: https://drive.google.com/drive/folders/1wXkVaWjAplONy5PT8Nxc25CdNh6pyFnX?usp=sharing
 
-ACTION - Using Mysqls import data wizard tool and sql queries I collected and transformed the data from the excel sheets. Using Tableaus visualizations and slicer filters I built each dashboard unique and different. I created an orders dashboard that has a donut and bar chart to show comparisons in sales by food & pizza type. One pie chart to show camparisons on delivery(T or F). Along with a double line chart to show trends over time by total sales and total orders. And a heat map to show where the most sales are.
+## S.T.A.R
+
+### Situation:
+
+The owner of Angelo's Pizza tasked me with developing three unique dashboards to enhance business profit through data-driven strategies.
+
+### Tasks:
+
+1. **Orders & Sales Dashboard:**
+
+• Develop visualizations comparing orders and sales, including charts for food & pizza type comparisons, delivery patterns, and sales trends.
+
+2. **Inventory Dashboard:**
+
+• Create a dashboard displaying ingredient costs, quantities, and top-selling pizzas based on real-time data.
+
+3. **Staff Labor Cost Dashboard:**
+
+• Build a dashboard detailing staff names, shift timings, hours worked, hourly rates, and daily labor costs.
+
+### Actions:
+
+• Utilized MySQL's import data wizard and SQL queries to collect and transform data.
+
+• Leveraged Tableau's visualizations and slicer filters to create unique dashboards for each specific aspect.
+
+• Designed detailed visualizations including donut charts, bar charts, line charts, pie charts, and heat maps.
 
 I developed an inventory dashboard that has one color coded table visualization for showing the ingredient costs, quantity, and percent remaining. And a second table visualization for showing the top selling pizzas at the current time period of the day.
 
+### Results:
 
-I built a staff labor cost dashboard for my last dashboard that shows the staffs name, shift start & end time, shift hours, hourly rate, and cost of staff that day all in one table visualization.
+• Discovered that pizza constitutes 64% of total sales, prompting strategic focus on pizza offerings.
 
-RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 64% of total sales. Angelo's owner also knows to make more Large Quattro Formaggi pizzas since it's the top selling pizza at $741. Thanks to my findings, Angelo's owner can note 1pm has the highest amount of orders placed. And that 7pm produces the highest amount of sales. Angelo's owner can start increasing shipment order quantities for banoffe pie, anchovies, and pizza dough since the percent remaining was color coded red for take action. Finally, with labor cost being high, Angelo's owner can make changes to Luqmans'($548.25) and Mindys'($439.88) four day schedule to help lower labor cost since they cost the most in labor.
+• Identified the top-selling pizza ("Large Quattro Formaggi") generating $741 in revenue.
+
+• Pinpointed peak order times (1 pm) and highest sales period (7 pm) for targeted business strategies.
+
+• Noted inventory shortages in items like banoffee pie, anchovies, and pizza dough, signaling necessary adjustments in supply chain management.
+
+• Addressed high labor costs by suggesting optimized staff schedules, potentially saving costs.
+
 
 
  # Query Script Breakdown
