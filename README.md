@@ -26,7 +26,7 @@ RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 6
  # Query Script Breakdown
  1. ORDER&SALES - This SQL script is designed to retrieve specific data from the "orders" table along with related information from the "item" and "address" tables. It combines information about orders, items, and delivery addresses into one result set.
 
-          Table Indentifier
+Table Indentifier
     
 - order_id: The unique identifier for each order.
 - item_price: The price of the item in the order.
@@ -42,7 +42,7 @@ RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 6
 
 2. STOCK1 - This SQL script creates a view named 'stock1' that provides detailed information about the stock of ingredients required for items in your database. The view calculates various metrics related to ingredient costs and stock quantities based on order data and recipes.
 
-          Table Indentifier
+Table Indentifier
 
 - item_name: The name of the item.
 - ing_id: The ingredient's unique identifier.
@@ -63,7 +63,7 @@ RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 6
 
 4. EMPLOYEE COST - This SQL script retrieves and calculates staff costs based on rota data. It combines information from the "rota," "staff," and "shift" tables to create a result set with details about staff shifts and associated costs.
    
-           Table Indentifier
+Table Indentifier
    
 - date: The date of the shift.
 - first_name: The first name of the staff member.
