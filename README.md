@@ -18,17 +18,17 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
 
 ### Tasks:
 
-1. **Orders & Sales Dashboard:**
+**1. Orders & Sales Dashboard:**
 
-   • Develop visualizations comparing orders and sales, including charts for food & pizza type comparisons, delivery patterns, and sales trends.
+• Develop visualizations comparing orders and sales, including charts for food & pizza type comparisons, delivery patterns, and sales trends.
 
-2. **Inventory Dashboard:**
+**2. Inventory Dashboard:**
 
-   • Create a dashboard displaying ingredient costs, quantities, and top-selling pizzas based on real-time data.
+• Create a dashboard displaying ingredient costs, quantities, and top-selling pizzas based on real-time data.
 
-3. **Staff Labor Cost Dashboard:**
+**3. Staff Labor Cost Dashboard:**
 
-   • Build a dashboard detailing staff names, shift timings, hours worked, hourly rates, and daily labor costs.
+• Build a dashboard detailing staff names, shift timings, hours worked, hourly rates, and daily labor costs.
 
 ### Actions:
 
@@ -50,10 +50,13 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
 
 • Addressed high labor costs by suggesting optimized staff schedules, potentially saving costs.
 
+## Query Script Breakdown
 
+**1. ORDER & SALES**
 
- # Query Script Breakdown
- 1. ORDER&SALES - This SQL script is designed to retrieve specific data from the "orders" table along with related information from the "item" and "address" tables. It combines information about orders, items, and delivery addresses into one result set.
+• SQL script retrieving specific data from the "orders," "item," and "address" tables.
+
+• Provides a comprehensive overview of orders, item details, and delivery information.
 
         SELECT
 	    o.order_id,
