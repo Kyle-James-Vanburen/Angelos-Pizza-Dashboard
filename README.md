@@ -11,10 +11,18 @@ You will need to use Excel to access the CSV files, heres a link for the free we
 
  S.T.A.R
 
-SITUATION - Owner of Angelo's Pizza has requested me to develop three unique dashboards to increase the business profit. One for orders & sales comparsions. A second one, for inventory quantity & cost. And the third and last dashboard for staff labor cost.
+SITUATION - Owner of Angelo's Pizza has requested me to develop three unique dashboards to increase the business profit.
 
 TASK - One for orders & sales comparsions. A second one, for inventory quantity & cost. And the third and last dashboard for staff labor cost.
 
+ACTION - Using Mysqls import data wizard tool and sql queries I collected and transformed the data from the excel sheets. Using Tableaus visualizations and slicer filters I built each dashboard unique and different. I created an orders dashboard that has a donut and bar chart to show comparisons in sales by food & pizza type. One pie chart to show camparisons on delivery(T or F). Along with a double line chart to show trends over time by total sales and total orders. And a heat map to show where the most sales are.
+
+I developed an inventory dashboard has one color coded table visualization for showing the ingredient costs, quantity, and percent remaining. And a second table visualization for showing the top selling pizzas at the current time period of the day.
+
+
+I built a staff labor cost dashboard for my last one that shows the staffs name, shift start & end time, shift hours, hourly rate, and cost of staff that day all in one table visualization.
+
+RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 64% of total sales. Angelo's owner also knows to make more Large Quattro Formaggi pizzas since it's the top selling pizza at $741. Thanks to my findings, Angelo's owner can note 1pm has the highest amount of orders placed. And that 7pm produces the highest amount of sales. Angelo's owner can start increasing shipment order quantities for banoffe pie, anchovies, and pizza dough since the percent remaining was color coded red for take action. Finally, with labor cost being high, Angelo's owner can make changes to Luqmans'($548.25) and Mindys'($439.88) four day schedule to help lower labor cost since they cost the most in labor.
 
 
  # Query Script Breakdown
