@@ -26,6 +26,23 @@ RESULT - Because of my initiative, Angelo's owner now knows pizza makes up for 6
  # Query Script Breakdown
  1. ORDER&SALES - This SQL script is designed to retrieve specific data from the "orders" table along with related information from the "item" and "address" tables. It combines information about orders, items, and delivery addresses into one result set.
 
+        SELECT
+	    o.order_id,
+	    i.item_price,
+	    o.quantity,
+	    i.item_cat,
+	    i.item_name,
+	    o.created_at,
+	    a.delivery_address1,
+	    a.delivery_address2,
+	    a.delivery_city,
+	    a.delivery_zipcode,
+	    o.delivery 
+        FROM
+	    orders o
+	    LEFT JOIN item i ON o.item_id = i.item_id
+	    LEFT JOIN address a ON o.add_id = a.add_id
+
 Table Indentifier
     
 - order_id: The unique identifier for each order.
@@ -58,10 +75,59 @@ Table Indentifier
 
 3. ING COST&WEIGHT - This SQL script performs a calculation to determine ingredient costs for items based on order data and recipes. It creates a result set that includes various metrics related to ingredient costs and quantities.
 
+       SELECT
+       s1.item_name,
+       s1.ing_id,
+       s1.ing_name,
+       s1.ing_weight,
+       s1.ing_price,
+       s1.order_quantity,
+       s1.recipe_quantity,
+       s1.order_quantity * s1.recipe_quantity AS ordered_weight,
+       s1.ing_price / s1.ing_weight AS unit_cost,
+       (s1.order_quantity * s1.recipe_quantity) * (s1.ing_price / s1.ing_weight) AS ingredient_cost
+       FROM (SELECT
+	   o.item_id,
+       i.sku,
+	   i.item_name,
+       r.ing_id,
+       ing.ing_name,
+       r.quantity AS recipe_quantity,
+	   sum(o.quantity) AS order_quantity,
+       ing.ing_weight,
+       ing.ing_price
+       FROM 
+	   orders o
+	   LEFT JOIN item i ON o.item_id = i.item_id
+       LEFT JOIN recipe r ON i.sku = r.recipe_id
+       LEFT JOIN ingredient ing ON ing.ing_id = r.ing_id
+       GROUP BY 
+	   o.item_id,
+	   i.sku,
+       i.item_name,
+       r.ing_id,
+       r.quantity,
+       ing.ing_name,
+       ing.ing_weight,
+       ing.ing_price) s1;
+
    It combines data from the "orders," "item," "recipe," and "ingredient" tables to create a result set with the same columns as listed in script #3!!
 
 
 4. EMPLOYEE COST - This SQL script retrieves and calculates staff costs based on rota data. It combines information from the "rota," "staff," and "shift" tables to create a result set with details about staff shifts and associated costs.
+
+       SELECT
+       r.date,
+       s.first_name,
+       s.last_name,
+       s.hourly_rate,
+       sh.start_time,
+       sh.end_time,
+       ((hour(timediff(sh.end_time, sh.start_time)) * 60) + (minute(timediff(sh.end_time, sh.start_time)))) / 60 AS hours_in_shift,
+       ((hour(timediff(sh.end_time, sh.start_time)) * 60) + (minute(timediff(sh.end_time, sh.start_time)))) / 60 * s.hourly_rate AS staff_cost
+       FROM rota r
+       LEFT JOIN staff s ON r.staff_id = s.staff_id
+       LEFT JOIN shift sh ON r.shift_id = sh.shift_id;
    
 Table Indentifier
    
