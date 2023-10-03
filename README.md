@@ -20,15 +20,15 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
 
 1. **Orders & Sales Dashboard:**
 
-• Develop visualizations comparing orders and sales, including charts for food & pizza type comparisons, delivery patterns, and sales trends.
+   • Develop visualizations comparing orders and sales, including charts for food & pizza type comparisons, delivery patterns, and sales trends.
 
 2. **Inventory Dashboard:**
 
-• Create a dashboard displaying ingredient costs, quantities, and top-selling pizzas based on real-time data.
+   • Create a dashboard displaying ingredient costs, quantities, and top-selling pizzas based on real-time data.
 
 3. **Staff Labor Cost Dashboard:**
 
-• Build a dashboard detailing staff names, shift timings, hours worked, hourly rates, and daily labor costs.
+   • Build a dashboard detailing staff names, shift timings, hours worked, hourly rates, and daily labor costs.
 
 ### Actions:
 
@@ -37,8 +37,6 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
 • Leveraged Tableau's visualizations and slicer filters to create unique dashboards for each specific aspect.
 
 • Designed detailed visualizations including donut charts, bar charts, line charts, pie charts, and heat maps.
-
-I developed an inventory dashboard that has one color coded table visualization for showing the ingredient costs, quantity, and percent remaining. And a second table visualization for showing the top selling pizzas at the current time period of the day.
 
 ### Results:
 
