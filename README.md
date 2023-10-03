@@ -123,7 +123,11 @@ The owner of Angelo's Pizza tasked me with developing three unique dashboards to
        ing.ing_weight,
        ing.ing_price) s1;
 
-3. ING COST&WEIGHT - This SQL script performs a calculation to determine ingredient costs for items based on order data and recipes. It creates a result set that includes various metrics related to ingredient costs and quantities.
+**3. ING COST & WEIGHT**
+
+• Calculates ingredient costs for items based on order data and recipes.
+
+• Combines data from "orders," "item," "recipe," and "ingredient" tables to derive ingredient costs and quantities.
 
        SELECT
           s1.item_name,
